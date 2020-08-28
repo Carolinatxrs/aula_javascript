@@ -1,4 +1,36 @@
-	
+
+	function clicar(){
+		// alert("Obrigado por clicar");
+		document.getElementById("agradecimento").innerHTML = "<i>Obrigado por clicar</i>";
+		// console.log(document.getElementById("agradecimento"));
+	}
+
+	function redirecionar() {
+		// abri nova janela
+		window.open ("https://web.digitalinnovation.one/");
+		// abri na mesma
+		// window.location.href = "https://web.digitalinnovation.one/";
+	}
+
+	function trocar(elemento) {
+		// document.getElementById("mousemove").innerHTML = "Obrigado por passar o mouse";
+		// alert("trocar o texto");
+		elemento.innerHTML = "Obrigado por passar o mouse";
+	}
+
+	function voltar(elemento) {
+		// document.getElementById("mousemove").innerHTML = "passe o mouse aqui";
+		elemento.innerHTML = "passe o mouse aqui";
+	}
+
+	function load() {
+		alert("pagina carregada");
+	}
+
+	function funcaoChange(elemento) {
+		console.log(elemento.value);
+	}
+
 /*	var nome = "Carolina Teixeira";
 	var n1 = 5;
 	var n2 = 10;
@@ -80,3 +112,43 @@
 	// alert(d.getMinutes());
 	alert(d.getDay());
 	alert(d.getHours());*/
+
+	// funcao
+	/*function soma(n1, n2) {
+		return n1 + n2;
+	}
+
+	alert(soma(5, 10));*/
+	// variavel local
+	/*function validaIdade(idade) {
+		var validar;
+		if (idade >=18){
+			return validar = true;
+		}else{
+			return validar = false;
+		}
+	}
+
+	var idade = prompt("Qual é sua idade?");
+	console.log(validaIdade(idade));*/
+
+	// variavel global
+	/*var validar = 0;
+	function validaIdade(idade) {
+		if (idade >=18){
+			return validar = true;
+		}else{
+			return validar = false;
+		}
+	}
+
+	var idade = prompt("Qual é sua idade?");
+	validaIdade(idade);
+	console.log(validar);*/
+
+/*
+	function setReplace(frase, nome, novo_nome) {
+		return frase.replace(nome, novo_nome)
+	}
+	alert(setReplace("Vai Japão", "Japão", "Brasil"));
+*/	
